@@ -7,6 +7,8 @@ interface ScreenShareProps {
   isSharing: boolean;
   onAnalyze: (imageData: string) => void;
   isAnalyzing: boolean;
+  highlightedText: string[];
+  interactionMode: 'text' | 'voice';
 }
 
 export default function ScreenShare({ stream, isSharing, isAnalyzing }: ScreenShareProps) {

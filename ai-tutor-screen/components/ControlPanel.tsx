@@ -6,6 +6,8 @@ interface ControlPanelProps {
   onStopShare: () => void;
   onAnalyze: () => void;
   isAnalyzing: boolean;
+  onDetectText: () => void;
+  interactionMode: 'text' | 'voice';
 }
 
 export default function ControlPanel({
